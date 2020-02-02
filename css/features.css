@@ -1,0 +1,25 @@
+.features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features-block__item {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  text-align: center;
+}
+
+.features-block__text {
+  text-align: center;
+}
+
+.features-block__image {
+  height: 180px;
+}
+/*# sourceMappingURL=features.css.map */

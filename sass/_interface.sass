@@ -1,0 +1,71 @@
+body
+	+light
+	color: $text-color
+img
+	max-width: 100%
+.section
+	padding: 100px 0
+	&-title
+			font-size: 30px
+			+bold
+			text-align: center
+			text-transform: uppercase
+	&__title
+		margin-bottom: 80px		
+.button-o
+	cursor: pointer 
+	border: 2px solid $primary
+	padding: 17px 22px
+	font-size: 12px
+	+bold
+	color: $primary
+	text-transform: uppercase
+	background-color: #fff
+	text-decoration: none
+.button
+	cursor: pointer
+	border: none
+	background-color: $primary
+	color:#fff 
+	font-size: 16px
+	text-transform: uppercase
+	padding: 25px 45px
+	+bold
+	&-add
+		padding: 10px
+		text-transform: uppercase
+		color: $primary-dark
+		font-size: 15px
+		background-color: rgba($bg-secondary, 0.9)
+		border: 1px solid $primary-dark
+		text-decoration: none	
+.bg-secondary
+	background: $bg-secondary
+.input
+	height: 80px
+	padding-left: 30px
+	border: 1px solid #dddddd
+.checkbox
+	display: none
+	&:checked + label:before
+			background-color: $primary
+	&-label
+		display: flex
+		align-items: center
+		&:before
+			content: ""
+			border: 1px solid #dddddd
+			width: 30px
+			height: 30px
+			margin-right: 20px
+@media (max-width: 991px)
+  .button
+	  display: block
+@media (max-width: 576px)
+	.button-o
+		font-size: 10px
+	.section
+		padding: 70px 0
+		&__title
+			font-size: 20px
+			margin-bottom: 40px
