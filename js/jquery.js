@@ -1,26 +1,20 @@
 $(document).ready(function(){
-	$('.menu-button').on('click', function () {
-		$('.menu').toggleClass('menu_active');
-	});
+	$(".navbar").click(function () {
+		var icon = $(".navbar i");
 
-	$('.menu__link').on('click', function () {
-		$('.menu').toggleClass('menu_active');
-	})
-
-	$('#submit').click(function() {
-		var name = $('#name').val();
-		var phone = $('#phone').val();
-
-		var varData = 'Имя' + name + ' Телефон:' + phone;
-		console.log(varData);
-		$.ajax({
-			type:'POST',
-			url:'mail.php',
-			data: varData,
-			success: function(){
-				alert ("Спасибо!");
-			}
-		});
+		if (icon.hasClass("fa-bars")) {
+			icon.removeClass("fa-bars");
+			icon.addClass("fa-times");
+			$("nav").animate({ height: "300px" }, 500);
+		} else {
+			icon.removeClass("fa-times");
+			icon.addClass("fa-bars");
+			$("nav").animate({ height: "80px" }, 500);
+		}
+		$("main-nav").slideToggle(500);
 
 	});
+
 });	
+
+
