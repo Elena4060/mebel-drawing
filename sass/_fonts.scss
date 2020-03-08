@@ -1,41 +1,33 @@
 @font-face {
-	font-family: 'Proxima Nova Semibold';
-	src: url('../fonts/ProximaNova-Semibold.eot');
-	src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova-Semibold.woff') format('woff'),
-		url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+	font-family: 'Roboto-Black';
+	src: url('../fonts/Roboto-Black.ttf') format('truetype');
+	font-weight: black;
+	font-style: black;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src:	url('../fonts/Roboto-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Proxima Nova Light';
-	src: url('../fonts/ProximaNova-Light.eot');
-	src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova-Light.woff') format('woff'),
-		url('../fonts/ProximaNova-Light.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Ekaterina Velikaya One Regular';
-	src: url('../fonts/EkaterinaVelikayaOne.eot');
-	src: url('../fonts/EkaterinaVelikayaOne.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/EkaterinaVelikayaOne.woff') format('woff'),
-		url('../fonts/EkaterinaVelikayaOne.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Roboto-Bold';
+	src:	url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: bold;
 }
 
 @mixin bold {
-	font-family: 'Proxima Nova Semibold', sans-serif ;
+	font-family: 'Roboto-Bold',
+	sans-serif;
 }
-@mixin light {
-	font-family: 'Proxima Nova Light', sans-serif;
+@mixin dark {
+	font-family: 'Roboto-Black',	sans-serif;
 }
 
-@mixin light-1 {
-	font-family: 'Ekaterina Velikaya One Regular', sans-serif;
+@mixin regular {
+	font-family: 'Roboto-Regular',	sans-serif;
 }
 

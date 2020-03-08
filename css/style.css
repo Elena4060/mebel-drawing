@@ -8,6 +8,54 @@
   margin: auto;
 }
 
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 @media (max-width: 1169px) {
   .container {
     max-width: 960px;
@@ -28,31 +76,28 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova Semibold';
-  src: url("../fonts/ProximaNova-Semibold.eot");
-  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-family: 'Roboto-Black';
+  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: black;
+  font-style: black;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Proxima Nova Light';
-  src: url("../fonts/ProximaNova-Light.eot");
-  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ekaterina Velikaya One Regular';
-  src: url("../fonts/EkaterinaVelikayaOne.eot");
-  src: url("../fonts/EkaterinaVelikayaOne.eot?#iefix") format("embedded-opentype"), url("../fonts/EkaterinaVelikayaOne.woff") format("woff"), url("../fonts/EkaterinaVelikayaOne.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
 }
 
 body {
-  font-family: 'Proxima Nova Light', sans-serif;
+  font-family: 'Roboto-Regular',	sans-serif;
   color: #000;
 }
 
@@ -64,27 +109,12 @@ a {
   text-decoration: none;
 }
 
-.section {
-  padding: 100px 0;
-}
-
-.section-title {
-  font-size: 30px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.section__title {
-  margin-bottom: 80px;
-}
-
 .button-o {
   cursor: pointer;
   border: 2px solid rgba(17, 75, 53, 0.26);
   padding: 17px 22px;
   font-size: 12px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
   color: rgba(17, 75, 53, 0.26);
   text-transform: uppercase;
   background-color: #fff;
@@ -99,7 +129,7 @@ a {
   font-size: 16px;
   text-transform: uppercase;
   padding: 25px 45px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
 }
 
 .button-add {
@@ -171,7 +201,6 @@ a {
 }
 
 .navbar__mobile {
-  position: absolute;
   font-size: 30px;
   height: 30px;
   right: 40px;
@@ -275,50 +304,73 @@ a {
   }
 }
 
-.hero {
+.section-1 {
   display: block;
-  background: #fff;
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 180px;
-  margin-top: 80px;
-  color: #442404;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  font-size: 3.2vh;
-  text-shadow: #fff 0.5px 0.5px 0, #fff -0.5px -0.5px 0, #000 -0.5px 0.5px 0, #000 0.5px -0.5px 0;
-}
-
-.hero .square {
-  border: 0;
   position: relative;
-  text-align: center;
-  width: 5vw;
+  width: 100%;
+  height: 1005px;
+  left: 0;
+  top: 182px;
+}
+
+.section-1__text {
+  position: relative;
+  height: 400px;
+  margin-left: 8.33%;
+  top: 20px;
+}
+
+.section-1__text-title {
+  width: 100%;
+  height: 90px;
+  left: 0;
+  top: 0;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  font-family: 'Roboto-Regular',	sans-serif;
+}
+
+.section-1__text-subtitle {
+  left: 0;
+  top: 0;
+  font-size: 22px;
+  line-height: 26px;
+  font-family: 'Roboto-Regular',	sans-serif;
+}
+
+.section-1__image-1 {
+  height: 100%;
+  margin-left: 0;
+  margin-top: -400px;
+  outline: 0;
+  border: none;
+  -webkit-box-sizing: cover;
+          box-sizing: cover;
+}
+
+.section-1__image-2 {
   height: auto;
+  position: relative;
+  right: 0;
+  top: 0;
+  -webkit-box-sizing: cover;
+          box-sizing: cover;
 }
 
-.hero__title {
-  font-size: 6vh;
-  font-weight: bold;
-  line-height: 2;
-  letter-spacing: 0.1em;
-  padding-right: 18vw;
-  text-align: right;
-  font-family: 'Ekaterina Velikaya One Regular', sans-serif;
-}
-
-.hero__subtitle {
-  line-height: 1.1;
-  margin-top: 80px;
-  color: #000;
-  text-align: right;
-  padding-right: 15vw;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-}
-
-.hero__subtitle .list {
-  direction: rtl;
+.section-1__square {
+  z-index: -200;
+  height: 500px;
+  left: 33.33%;
+  top: -200px;
+  background: #E2620B;
+  background-blend-mode: multiply;
+  opacity: 0.1;
+  border: 1px solid #C5C5C5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 50px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 50px 4px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 991px) {
@@ -351,7 +403,7 @@ a {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
 }
 
 .form__row {
@@ -598,7 +650,7 @@ a {
 
 .blog-list__text {
   font-size: 3vh;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +714,7 @@ a {
 
 .material-card__text {
   font-size: 3vh;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,7 +915,7 @@ a {
 .questions__title {
   margin-left: 20px;
   font-size: 20px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
 }
 
 .questions__link {
@@ -931,7 +983,7 @@ a {
 .footer__contacts {
   display: column;
   text-align: right;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-family: 'Roboto-Bold', sans-serif;
 }
 
 .footer__phone {
