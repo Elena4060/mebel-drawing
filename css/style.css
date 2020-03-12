@@ -69,17 +69,13 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style-type: disc;
-}
-
 .button-o {
   cursor: pointer;
-  border: 2px solid rgba(17, 75, 53, 0.26);
+  border: 2px solid #C1D0CB;
   padding: 17px 22px;
   font-size: 12px;
   font-family: 'Roboto-Bold',	sans-serif;
-  color: rgba(17, 75, 53, 0.26);
+  color: #C1D0CB;
   text-transform: uppercase;
   background-color: #fff;
   text-decoration: none;
@@ -88,7 +84,7 @@ li {
 .button {
   cursor: pointer;
   border: none;
-  background-color: rgba(17, 75, 53, 0.26);
+  background-color: #C1D0CB;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -99,10 +95,10 @@ li {
 .button-add {
   padding: 10px;
   text-transform: uppercase;
-  color: #442404;
+  color: #93ADA4;
   font-size: 15px;
   background-color: rgba(0, 0, 0, 0.9);
-  border: 1px solid #442404;
+  border: 1px solid #93ADA4;
   text-decoration: none;
 }
 
@@ -121,7 +117,7 @@ li {
 }
 
 .checkbox:checked + label:before {
-  background-color: rgba(17, 75, 53, 0.26);
+  background-color: #C1D0CB;
 }
 
 .checkbox-label {
@@ -173,18 +169,23 @@ li {
   height: 30px;
   right: 40px;
   top: 25px;
-  background: transparent;
 }
 
 .menu {
   z-index: 100;
+  height: 80px;
   position: fixed;
   line-height: 0;
   top: 0px;
   padding: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(17, 75, 53, 0.26);
+  background-color: #C1D0CB;
+}
+
+.menu__logo {
+  width: 270px;
+  background-color: #93ADA4;
 }
 
 .menu__nav {
@@ -202,8 +203,16 @@ li {
 .menu__link {
   text-decoration: none;
   font-size: 17px;
-  color: #000;
+  color: #fff;
+  text-shadow: grey 0 0 2px;
   font-weight: bold;
+}
+
+.menu__list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: auto;
 }
 
 .menu-button {
@@ -240,6 +249,17 @@ li {
   height: 3px;
   background-color: #9D8368;
   margin: 2px 0;
+}
+
+.mobile-nav-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -382,6 +402,10 @@ li {
 .section2-text__title {
   left: 0;
   top: 0;
+}
+
+.section2-text li {
+  list-style-type: disc;
 }
 
 .section2-text__subtitle {
@@ -561,13 +585,7 @@ li {
   z-index: -200;
   height: 230px;
   width: 100%;
-  top: 270px;
-  background: rgba(82, 81, 78, 0.41);
-  border-radius: 250px/150px;
-  background-blend-mode: multiply;
-  border: 1px solid #C5C5C5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  top: -70px;
 }
 
 @media (max-width: 991px) {
@@ -782,12 +800,12 @@ li {
 }
 
 .form__checkbox:checked + label::before {
-  background: #442404;
+  background: #93ADA4;
 }
 
 .form__checkbox:focus + label::before {
   outline: none;
-  border-color: rgba(17, 75, 53, 0.26);
+  border-color: #C1D0CB;
 }
 
 .form__group {
@@ -926,9 +944,9 @@ li {
   top: 15px;
   left: 15px;
   background-color: rgba(0, 0, 0, 0.9);
-  border: 1px solid #442404;
+  border: 1px solid #93ADA4;
   font-size: 14px;
-  color: #442404;
+  color: #93ADA4;
   padding: 10px;
 }
 
@@ -1180,7 +1198,7 @@ li {
   width: 70px;
   height: 70px;
   margin: 20px auto;
-  border: 2px solid rgba(17, 75, 53, 0.26);
+  border: 2px solid #C1D0CB;
   border-radius: 60%;
 }
 
@@ -1256,7 +1274,7 @@ li {
 
 .questions__link {
   font-size: 17px;
-  color: rgba(17, 75, 53, 0.26);
+  color: #C1D0CB;
 }
 
 .questions-block {
@@ -1274,7 +1292,7 @@ li {
 
 .footer {
   padding: 5px 50px;
-  background-color: rgba(17, 75, 53, 0.26);
+  background-color: #C1D0CB;
   color: #000;
   bottom: 0;
 }
@@ -1329,7 +1347,7 @@ li {
 
 .footer__pay-logo__mail {
   font-size: 0.9rem;
-  color: rgba(17, 75, 53, 0.26);
+  color: #C1D0CB;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }

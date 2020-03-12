@@ -12,40 +12,31 @@
 <body>
     <header id="header" class="header">
         <div class="menu">                    
-            <div class="container">                  
-                <!-- <nav class="menu__nav ">
-                    <div class="menu__logo">
-                        <a href="#header"><img src="img\navbar\logo_transparent1.png" alt="logo" /></a>
-                    </div>
-                    <a href="#header" class="menu__link">Главная</a>
-                    <a href="#blog" class="menu__link">Услуги</a>
-                    <a href="#catalog" class="menu__link">Чертежи</a>
-                    <a href="#material" class="menu__link">Каталог</a>
-                    <a href="#" class="menu__link">Контакты </a>
-                </nav >
-                <div class="navbar">
-                    <i class="fas fa-bars"></i>
-                </div> -->
-                <nav  class="menu__nav ">
-                    <div class="menu__logo">
-                        <a href="#header"><img src="img\navbar\logo_transparent1.png" alt="logo" /></a>
-                    </div>
-                    <ul id="main-nav" class="nav justify-content-end nav-pills">
-                        <li class="nav-item"><a class="menu__link" href="pages/aboutme.html">Главная</a> </li>
-                        <li class="nav-item"><a class="menu__link" href="pages/cues.html">Услуги</a> </li>
-                        <li class="nav-item"><a class="menu__link" href="pages/training.html">Чертежи</a> </li>
-                        <li class="nav-item"><a class="menu__link" href="pages/training.html">Каталог</a> </li>
-                        <li class="nav-item"><a class="menu__link" href="#contacts">Контакты</a> </li>
+            <div class="container"> 
+                <!-- <nav  class="menu__nav">
+                    <a class="menu__logo col-2" href="#header"><img src="img/navbar/logo_transparent2.svg" alt="logo" /></a>
+                    <ul class="nav menu__list nav-pills">
+                        <li ><a class="menu__link" href="pages/aboutme.html">Главная</a> </li>
+                        <li ><a class="menu__link" href="pages/cues.html">Услуги</a> </li>
+                        <li ><a class="menu__link" href="pages/training.html">Чертежи</a> </li>
+                        <li ><a class="menu__link" href="pages/training.html">Каталог</a> </li>
+                        <li ><a class="menu__link" href="#contacts">Контакты</a></li>
                     </ul>
                     <a class="navbar"><i class="fas fa-bars"></i></a>
+                </nav> -->
+                <div class="menu__logo active " href="#index"><img src="img/navbar/logo_transparent2.svg" alt="logo"></div>
+                <nav >
+                    <ul  class="nav menu__nav justify-content-between nav-pills">
+                        <li ><a class="menu__link" href="pages/aboutme.html">Услуги</a> </li>
+                        <li ><a class="menu__link" href="pages/cues.html">Чертежи</a> </li>
+                        <li ><a class="menu__link" href="pages/training.html">Каталог</a> </li>
+                        <li ><a class="menu__link" href="#contacts">Контакты</a> </li>
+                    </ul>
+                    <div class="mobile-nav-icon"><i class="fas fa-bars"></i></div>
                 </nav>
               </div>             
         </div>
-        <!-- /.navbar -->
-     
-        <!-- /.hero -->
     </header>
-    <!-- /.header -->
     <main class="">
         <section class="section1">
             <div class="container">
@@ -78,13 +69,6 @@
                 <div class="section2__image-2 col-5">
                     <img src="img/section_2/island_of_kitchen1.png" alt="Остров на кухню">
                 </div>
-                <!-- <div class="section2-text ">                    
-                    <div class="section2-text__subtitle col-5">
-                        У вас есть дизайн или же просто идея, которую вам хотелось бы воплотить в жизнь?
-                        Мы cоздаем 3D модели, чертежи и спецификации. Подбираем необходимую фурнитуру.
-                        Будь то эскиз набросанный от руки на листке бумаги или фото из интернета.
-                    </div>
-                </div> -->
                 <div class="section2__square col-6 "></div>
                 <div class="section2__image-1 col-5">
                     <img src="img/section_2/island_of_kitchen2.png" alt="Остров на кухню">
@@ -135,7 +119,9 @@
                     <img src="img/section_4/cupboard.png" alt="Шкаф">
                 </div>
                 <div class="section4__square col-4 "></div>
-                <div class="section4__elipse col-4 "></div>
+                <div class="section4__elipse col-4 ">
+                    <img src="img/section_4/elipse.svg" alt="Шкаф">
+                </div>
                 <div class="section4-text col-5 ">
                     <h2 class="section4-text__title  ">Почему с нами удобно?</h2>
                     <div class="section4-text__subtitle">
