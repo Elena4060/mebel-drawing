@@ -13,6 +13,13 @@
 }
 
 @font-face {
+	font-family: 'Great Vibes';
+	src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
 	font-family: 'Roboto-Bold';
 	src:	url('../fonts/Roboto-Bold.ttf') format('truetype');
 	font-weight: bold;
@@ -20,8 +27,7 @@
 }
 
 @mixin bold {
-	font-family: 'Roboto-Bold',
-	sans-serif;
+	font-family: 'Roboto-Bold',	sans-serif;
 }
 @mixin dark {
 	font-family: 'Roboto-Black',	sans-serif;
@@ -30,4 +36,6 @@
 @mixin regular {
 	font-family: 'Roboto-Regular',	sans-serif;
 }
-
+@mixin cursive {
+	font-family: 'Great Vibes', cursive;
+}

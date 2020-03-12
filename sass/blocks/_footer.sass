@@ -1,32 +1,43 @@
 .footer
-	padding: 40px 0
+	padding: 5px 50px
 	background-color: $primary
 	color: $bg-secondary
-	&-block
-		margin-left: 180px
+	bottom: 0
+	&-block		
 		display: flex
 		justify-content: space-between
+		margin-bottom: 50px
+		margin-top: 50px
+	&__questions
+		margin-left: 20px
+		font-size: 1.1rem
+		+bold	
+		
 	a
-		color: $bg-secondary
-		text-decoration: none
+		color: $bg-secondary	
+		text-decoration-line: underline
 	&__title
-		font-size: 3vh
-		text-transform: uppercase
-		margin-bottom: 48px		
+		font-size: 1.8rem
+		+cursive
+		font-weight: 590
+		color: $bg-secondary
+		margin-bottom: 30px		
 	&__copy		
-		margin-bottom: 100px
+		font-size: 0.8rem		
 	&__pay-logo
 		z-index: 100
 		display: inline-block
-		padding: 15px
-		margin-top: 50px
-		font-size: 50px
+		padding: 0 15px
+		// margin-top: 50px
+		font-size: 40px
 		&-img
-			height: 50px
-			width: auto
-			
-			
-
+			height: 42px
+			width: 60px
+			border-radius: 5px		
+  &__mail
+		 font-size: 0.9rem
+		 color: $primary
+		 text-decoration-line: underline
 	&__contacts
 		display: column
 		text-align: right
@@ -39,7 +50,8 @@
 		&__link
 			margin: 15px
 			display: inline-block
-			font-size: 30px
+			font-size: 40px
+			line-height: 1
 @media (max-width: 768px) 
 	.footer
 		&-block
