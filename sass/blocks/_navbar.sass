@@ -17,9 +17,10 @@
 	padding: 0
 	left: 0
 	width: 100%
-	background-color: $primary
-	
+	background-color: $primary	
 	&__logo 
+		left: 0
+		top: 0
 		width: 270px	
 		background-color: $primary-dark	
 	&__nav
@@ -29,7 +30,8 @@
 	ul
 		display: flex
 		li
-			margin: 0 30px 
+			// margin: 0 30px 
+			flex: 1 1 0
 	&__link
 		text-decoration: none
 		font-size: 17px
@@ -39,25 +41,6 @@
 	&__list
 			justify-content: space-between
 			padding-left: auto
-	&-button
-		height: 80px
-		width: 70px
-		display: flex
-		font-size: 25px
-		flex-direction: column
-		align-items: center
-		justify-content: center
-		background-color: transparent
-		&:focus
-			outline: none
-		&:hover
-			cursor: pointer			
-	 &__line
-			display: block
-			width: 20px
-			height: 3px
-			background-color: #9D8368
-			margin: 2px 0  
 .mobile-nav-icon 
 	position: absolute
 	top: 0
@@ -70,7 +53,11 @@
 @media (max-width: 991px)
  .menu		
 		top: 0px
-		&__nav
+		left: 0px
+		&__logo
+			top: 0px
+			left: 0px
+		&__list
 			flex-direction: column
 		&__link
 			margin-top: 15px
@@ -89,7 +76,7 @@
 		&__logo
 			float: left
 			margin-left: 20px
-		&__nav
+		&__list
 			flex-direction: column
 		&__link
 			margin-top: 15px

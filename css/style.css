@@ -190,6 +190,8 @@ a {
 }
 
 .menu__logo {
+  left: 0;
+  top: 0;
   width: 270px;
   background-color: #93ADA4;
 }
@@ -213,7 +215,9 @@ a {
 }
 
 .menu ul li {
-  margin: 0 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 .menu__link {
@@ -231,42 +235,6 @@ a {
   padding-left: auto;
 }
 
-.menu-button {
-  height: 80px;
-  width: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 25px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: transparent;
-}
-
-.menu-button:focus {
-  outline: none;
-}
-
-.menu-button:hover {
-  cursor: pointer;
-}
-
-.menu-button__line {
-  display: block;
-  width: 20px;
-  height: 3px;
-  background-color: #9D8368;
-  margin: 2px 0;
-}
-
 .mobile-nav-icon {
   position: absolute;
   top: 0;
@@ -281,8 +249,13 @@ a {
 @media (max-width: 991px) {
   .menu {
     top: 0px;
+    left: 0px;
   }
-  .menu__nav {
+  .menu__logo {
+    top: 0px;
+    left: 0px;
+  }
+  .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -313,7 +286,7 @@ a {
     float: left;
     margin-left: 20px;
   }
-  .menu__nav {
+  .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
