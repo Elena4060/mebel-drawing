@@ -1,13 +1,3 @@
-.header
-	display: flex
-.navbar
-	display: none	
-	&__mobile	
-		font-size: 30px
-		height: 30px
-		right: 40px
-		top: 25px
-		// background: transparent	
 .menu	
 	z-index: 100
 	height: 80px
@@ -18,69 +8,57 @@
 	left: 0
 	width: 100%
 	background-color: $primary	
-	&__logo 
-		left: 0
-		top: 0
-		width: 270px	
-		background-color: $primary-dark	
 	&__nav
 		display: flex
 		align-items: center
 		justify-content: space-between
-	ul
-		display: flex
-		li
-			// margin: 0 30px 
-			flex: 1 1 0
-	&__link
-		text-decoration: none
-		font-size: 17px
-		color: #fff
-		text-shadow: grey 0 0 2px
-		font-weight: bold	
-	&__list
+		&-logo 
+			left: 0
+			top: 0
+			width: 270px	
+			background-color: $primary-dark	
+		&-list
+			display: flex			
 			justify-content: space-between
 			padding-left: auto
-.mobile-nav-icon 
-	position: absolute
-	top: 0
-	right: 0
-	margin-right: 20px
-	margin-top: 20px
-	cursor: pointer
-	display: none
-	color: #fff	   
-@media (max-width: 991px)
+			&-link
+				text-decoration: none
+				font-size: 17px
+				margin-left: 50px
+				color: #fff
+				text-shadow: grey 0 0 2px
+				font-weight: bold	
+		&-icon 
+			position: absolute
+			top: 0
+			right: 0
+			font-size: 2rem
+			margin-right: 30px
+			margin-top: 25px
+			cursor: pointer
+			display: none
+			color: #fff	   
+		  		
+@media (max-width: 768px)  
  .menu		
-		top: 0px
-		left: 0px
-		&__logo
-			top: 0px
-			left: 0px
-		&__list
-			flex-direction: column
-		&__link
-			margin-top: 15px
-			margin-bottom: 15px		  		
-@media (max-width: 768px)
- .navbar
-		display: flex
-		position: absolute
-		font-size: 30px
-		height: 30px
-		right: 40px
-		top: 25px
-		background: transparent	  
- .menu		
-		top: 0px
-		&__logo
+		&__nav
 			float: left
 			margin-left: 20px
-		&__list
-			flex-direction: column
-		&__link
-			margin-top: 15px
-			margin-bottom: 15px
+			&-logo
+				height: 80px
+				width: 270px
+				img
+					height: 80px
+				  width: 270px
+			&-list
+				float: right
+				display: none
+			&-icon 
+				display: inline-block	
+				
+				// &-link
+			  //    margin-top: 15px
+			  //    margin-bottom: 15px
 
 
 
