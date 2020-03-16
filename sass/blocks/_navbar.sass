@@ -7,27 +7,32 @@
 	padding: 0
 	left: 0
 	width: 100%
-	background-color: $primary	
+	background-color: $primary
+	opacity: 0.98	
 	&__nav
-		display: flex
-		align-items: center
+		display: block	
+		background-color: $primary
 		justify-content: space-between
 		&-logo 
-			left: 0
+			float: left
 			top: 0
-			width: 270px	
+			width: 270px
+			height: 80px	
 			background-color: $primary-dark	
 		&-list
-			display: flex			
+			align-items: center
+				
 			justify-content: space-between
 			padding-left: auto
-			&-link
-				text-decoration: none
-				font-size: 17px
-				margin-left: 50px
-				color: #fff
-				text-shadow: grey 0 0 2px
-				font-weight: bold	
+		&-link
+			text-decoration: none
+			display: inline-block
+			margin-top: 40px	
+			font-size: 17px
+			margin-left: 50px
+			color: #fff
+			text-shadow: grey 0 0 2px
+			font-weight: bold	
 		&-icon 
 			position: absolute
 			top: 0
@@ -42,23 +47,28 @@
 @media (max-width: 768px)  
  .menu		
 		&__nav
+			display: block
 			float: left
-			margin-left: 20px
+			width: 100%
 			&-logo
-				height: 80px
-				width: 270px
+				margin-left: 0
+				margin-top: 0
 				img
 					height: 80px
-				  width: 270px
+					width: 270px
 			&-list
+				margin-top: 80px
+				display: block
 				float: right
-				display: none
+				margin-right: 30px
+				padding: 1px 0
+				
+			&-link
+				display: block
+				text-align: right
+					
 			&-icon 
 				display: inline-block	
-				
-				// &-link
-			  //    margin-top: 15px
-			  //    margin-bottom: 15px
 
 
 
