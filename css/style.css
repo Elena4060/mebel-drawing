@@ -233,11 +233,42 @@ a {
     float: right;
     margin-right: 30px;
     padding: 1px 0;
+    margin-bottom: 50px;
   }
   .menu__nav-link {
     display: block;
     text-align: right;
+  }
+  .menu__nav-icon {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 426px) {
+  .menu__nav {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .menu__nav-logo {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .menu__nav-logo img {
+    height: 80px;
+    width: 270px;
+  }
+  .menu__nav-list {
+    margin-top: 0;
+    display: none;
+    float: right;
+    margin-right: 30px;
+    padding: 1px 0;
     margin-bottom: 50px;
+  }
+  .menu__nav-link {
+    display: block;
+    text-align: right;
   }
   .menu__nav-icon {
     display: inline-block;
