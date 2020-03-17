@@ -176,7 +176,6 @@ a {
 .menu__nav {
   display: block;
   background-color: #C1D0CB;
-  float: left;
 }
 
 .menu__nav-logo {
@@ -238,6 +237,7 @@ a {
   .menu__nav-link {
     display: block;
     text-align: right;
+    margin-bottom: 50px;
   }
   .menu__nav-icon {
     display: inline-block;
