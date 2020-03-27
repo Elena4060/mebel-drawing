@@ -88,15 +88,13 @@ a {
   border: none;
   background-color: #C1D0CB;
   color: #fff;
-  font-size: 16px;
-  text-transform: uppercase;
+  font-size: 24px;
   padding: 25px 45px;
   font-family: 'Roboto-Bold',	sans-serif;
 }
 
 .button-add {
   padding: 10px;
-  text-transform: uppercase;
   color: #93ADA4;
   font-size: 15px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -181,6 +179,7 @@ a {
 }
 
 .menu__nav-logo {
+  cursor: pointer;
   float: left;
   top: 0;
   width: 270px;
@@ -201,6 +200,7 @@ a {
   color: #fff;
   text-shadow: grey 0 0 2px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .menu__nav-icon {
@@ -215,7 +215,7 @@ a {
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .menu__nav {
     display: block;
     float: left;
@@ -707,6 +707,85 @@ a {
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.section11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.section11__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section11-text {
+  width: 100%;
+  font-family: 'Roboto-Regular',	sans-serif;
+  color: #000000;
+  top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.section11-text__title {
+  margin-left: 8.33%;
+  left: 0;
+  top: 0;
+}
+
+.section11-text__subtitle1 {
+  float: right;
+  margin-top: -200px;
+  right: 0;
+}
+
+.section11-text__subtitle {
+  margin-left: 8.33%;
+  left: 0;
+  top: 0;
+}
+
+.section11__image-1 {
+  margin-left: 0;
+  outline: 0;
+  border: none;
+  -webkit-box-sizing: cover;
+          box-sizing: cover;
+}
+
+.section11__image-2 {
+  margin-left: 0;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section11__button {
+  float: right;
+  margin-top: 225px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 150px;
+    background-size: cover;
+  }
+  .hero__title {
+    font-size: 5vh;
+    padding-right: 10px;
+  }
+  .hero__subtitle {
+    margin-top: 180px;
+    padding-right: 10px;
+  }
 }
 
 .offer {
