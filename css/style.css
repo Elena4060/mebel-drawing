@@ -661,7 +661,7 @@ a {
   width: 100%;
   height: auto;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .section6-text {
@@ -771,6 +771,122 @@ a {
 .section11__button {
   float: right;
   margin-top: 225px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 150px;
+    background-size: cover;
+  }
+  .hero__title {
+    font-size: 5vh;
+    padding-right: 10px;
+  }
+  .hero__subtitle {
+    margin-top: 180px;
+    padding-right: 10px;
+  }
+}
+
+.section21 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.section21__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section21-text {
+  width: 100%;
+  font-family: 'Roboto-Regular',	sans-serif;
+  color: #000000;
+  top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.section21-text__title {
+  margin-left: 8.33%;
+  left: 0;
+  top: 0;
+}
+
+.section21-text__subtitle1 {
+  float: right;
+  margin-top: -200px;
+  right: 0;
+}
+
+.section21-text__subtitle {
+  margin-left: 8.33%;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 150px;
+    background-size: cover;
+  }
+  .hero__title {
+    font-size: 5vh;
+    padding-right: 10px;
+  }
+  .hero__subtitle {
+    margin-top: 180px;
+    padding-right: 10px;
+  }
+}
+
+.section21 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.section21__size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section21-text {
+  width: 100%;
+  font-family: 'Roboto-Regular',	sans-serif;
+  color: #000000;
+  top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+.section21-text__title {
+  margin-left: 8.33%;
+  left: 0;
+  top: 0;
+}
+
+.section21-text__subtitle1 {
+  float: right;
+  margin-top: -200px;
+  right: 0;
+}
+
+.section21-text__subtitle {
+  margin-left: 8.33%;
+  left: 0;
+  top: 0;
 }
 
 @media (max-width: 991px) {
